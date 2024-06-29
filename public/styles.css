@@ -1,0 +1,13 @@
+.hide-on-request:has(~ .htmx-request[aria-busy="true"]) {
+  visibility: hidden;
+  width: 0;
+}
+
+[aria-busy="true"] {
+  visibility: hidden;
+}
+
+.htmx-request[aria-busy="true"] {
+  visibility: visible;
+}
+
